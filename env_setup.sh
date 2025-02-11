@@ -30,7 +30,7 @@ wget -O ~/.zshrc https://github.com/Chief-Zach/linux_setup/blob/main/.zshrc
 
 wget -O ~/.config/nvim/init.lua https://github.com/Chief-Zach/linux_setup/blob/main/init.lua
 
-npm install -g pyright
+sudo npm install -g pyright
 
 nvim -es -c :PlugInstall
 
