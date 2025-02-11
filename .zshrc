@@ -6,7 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Set up the prompt
-
 autoload -Uz promptinit
 promptinit
 prompt adam1
@@ -48,13 +47,12 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 
-# Enable colors in ls output
-
 # Alias ls to always use colors
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias la='ls -lha --color=auto'
 alias l='ls -CF --color=auto'
+alias vim='nvim' # Personal preference. Neo is better, but I've used vim for so long its a habit of typing it
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
