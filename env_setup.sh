@@ -26,9 +26,9 @@ git clone https://github.com/vim-airline/vim-airline.git ~/.config/nvim/bundle/v
 git clone https://github.com/vim-airline/vim-airline-themes.git ~/.config/nvim/bundle/vim-airline-themes
 
 
-wget -O ~/.zshrc https://github.com/Chief-Zach/linux_setup/blob/main/.zshrc
+wget -O ~/.zshrc https://raw.githubusercontent.com/Chief-Zach/linux_setup/refs/heads/main/.zshrc
 
-wget -O ~/.config/nvim/init.lua https://github.com/Chief-Zach/linux_setup/blob/main/init.lua
+wget -O ~/.config/nvim/init.lua https://raw.githubusercontent.com/Chief-Zach/linux_setup/refs/heads/main/init.lua
 
 npm install -g pyright
 
