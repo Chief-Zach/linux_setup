@@ -1,0 +1,1 @@
+A list of the tools and configurations that I use over my machines with setup scripts so the setup can be handled with just a git request. Also includes styling from PowerLevel10k, Vim-Airline, with code completion from cmp for NeoVim versions above 9.5.
