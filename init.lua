@@ -8,6 +8,8 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'petertriho/cmp-git'
 
 " For vsnip users.
 Plug 'hrsh7th/cmp-vsnip'
@@ -120,3 +122,4 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
