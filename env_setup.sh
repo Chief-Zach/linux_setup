@@ -14,6 +14,9 @@ read username
 
 sudo chsh -s /bin/zsh $username
 
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 mkdir -p ~/.config/nvim/bundle
 
 git clone https://github.com/neovim/nvim-lspconfig.git ~/.config/nvim/bundle/nvim-lspconfig
@@ -34,3 +37,4 @@ sudo npm install -g pyright
 
 nvim -es -c :PlugInstall
 
+source ~/.zshrc
