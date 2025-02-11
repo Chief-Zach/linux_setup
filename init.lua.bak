@@ -1,0 +1,11 @@
+vim.cmd([[
+call plug#begin('~/.config/nvim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+]])
+
+vim.opt.tabstop = 4       -- Number of spaces for a tab character
+vim.opt.shiftwidth = 4    -- Number of spaces for each indentation level
+vim.opt.expandtab = true  -- Use spaces instead of tab characters
+vim.opt.softtabstop = 4   -- Number of spaces a Tab key press represents in insert mode
