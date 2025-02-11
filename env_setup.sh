@@ -24,7 +24,7 @@ if [[ $input =~ NVIM\ v([0-9]+)\.([0-9]+)\.([0-9]+) ]]; then
         git clone https://github.com/hrsh7th/cmp-nvim-lsp.git ~/.config/nvim/bundle/cmp-nvim-lsp
         git clone https://github.com/hrsh7th/cmp-cmdline.git ~/.config/nvim/bundle/cmp-cmdline
         git clone https://github.com/vim-airline/vim-airline.git ~/.config/nvim/bundle/vim-airline
-        git clone https://github.com/vim-airline/vim-airline-themes.git ~/.config/nvim/bundle/vim-airline-themesvv
+        git clone https://github.com/vim-airline/vim-airline-themes.git ~/.config/nvim/bundle/vim-airline-themes
         
         wget -O ~/.config/nvim/init.lua https://raw.githubusercontent.com/Chief-Zach/linux_setup/refs/heads/main/init.lua
 
@@ -35,6 +35,11 @@ if [[ $input =~ NVIM\ v([0-9]+)\.([0-9]+)\.([0-9]+) ]]; then
             
     else
         echo "NeoVim version not good. Try installing from snap, or functions will be disabled"
+        
+        git clone https://github.com/vim-airline/vim-airline.git ~/.config/nvim/bundle/vim-airline
+        git clone https://github.com/vim-airline/vim-airline-themes.git ~/.config/nvim/bundle/vim-airline-themes
+        wget -O ~/.config/nvim/init.lua https://raw.githubusercontent.com/Chief-Zach/linux_setup/refs/heads/main/init.lua.bak
+        
     fi
 fi
 
